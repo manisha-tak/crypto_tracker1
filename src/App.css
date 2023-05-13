@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  
+}
+
+a{
+  text-decoration: none;
+  color: gold;
+  
+}
+/* .body{
+  background-color: black;
+  color: white ;
+  min-height: "100vh";
+} */
+#title{
+  float: left;
+  margin-top:10px;
+  
+}
+.body{
+         background-color:rgb(24, 24, 24);
+      color:white;
+      min-height: 100vh;
+       
+}
+
+.search{
+  color: white;
+}
+.table{
+  background-color:rgb(24,24,24);
+  cursor: pointer;
+  font-family:"Montserrat";
+  
+}
+
+Tablerow:hover{
+  background-color: black;
+
+}
+.page{
+  color: gold;
+}
+.containers {
+  display: flex;
+}
+
+@media (max-width: 960px) {
+  .containers {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  border-right: 2px solid grey;
+}
+
+@media (max-width: 960px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.heading {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.description {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  padding-bottom: 15px;
+  padding-top: 0;
+  text-align: justify;
+}
+.marketData {
+  align-self: flex-start;
+  padding: 25px;
+  padding-top: 10px;
+  width: 100%;
+
+  /* Media queries for smaller screens */
+  @media (max-width: 960px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 400px) {
+    align-items: flex-start;
+  }
+}
+.container2 {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 40px;
+
+  /* Media query for smaller screens */
+  @media (max-width: 960px) {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 0;
+  }
+}
+.selectbutton {
+  border: 1px solid gold;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Montserrat;
+  cursor: pointer;
+  background-color: "";
+  color: "";
+  font-weight: 500;
+  width: 22%;
+  }
+  
+  .selectbutton.selected {
+  background-color: gold;
+  color: black;
+  font-weight: 700;
+  }
+  
+  .selectbutton:hover {
+  background-color: gold;
+  color: black;
+  }
+
+
+
+
+
+
